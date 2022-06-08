@@ -11,4 +11,7 @@ public class DashboardPage {
     public DashboardPage() {
         headig.shouldBe(visible);
     }
+
+    public void verifyIsDashboardPage() {
+    }
 }

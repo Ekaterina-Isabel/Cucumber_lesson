@@ -1,6 +1,7 @@
 package ru.netology.steps;
 
 import com.codeborne.selenide.Selenide;
+import io.cucumber.java.After;
 import io.cucumber.java.ru.И;
 import io.cucumber.java.ru.Когда;
 import io.cucumber.java.ru.Пусть;
@@ -14,6 +15,9 @@ public class TemplateSteps {
     private static LoginPage loginPage;
     private static DashboardPage dashboardPage;
     private static VerificationPage verificationPage;
+
+    //метод будет вызываться после каждого сценария (Н: закрытие браузера)
+    @After
 
     // указываем на каком этапе мы хотим, чтобы шаг использовался
     // string - передаем аргумент
